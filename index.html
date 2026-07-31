@@ -15,15 +15,15 @@
 :root{
   --unagi-900:#990000;
   --unagi-800:#CC0000;
-  --unagi-700:#CC9966;
-  --unagi-500:#CC9966;
-  --unagi-300:#CC9966;
+  --unagi-700:#FFCC99;
+  --unagi-500:#FFCC99;
+  --unagi-300:#FFCC99;
   --unagi-100:#F6E3C9;
   --orange-600:#FF9933;
   --orange-500:#FF9933;
   --orange-200:#FFCC33;
-  --orange-050:#CC9966;
-  --gold-600:#CC9966;
+  --orange-050:#FFCC99;
+  --gold-600:#FFCC99;
   --gold-500:#FFCC33;
   --gold-200:#FFCC33;
   --red-700:#990000;
@@ -148,9 +148,9 @@ a{ text-decoration:none; color:inherit; }
 
 /* ===================== CTAボタン ===================== */
 .kw-cta-btn{
-  display:block; text-align:center; background:linear-gradient(135deg, var(--red-700), var(--red-500));
+  display:block; text-align:center; background:#000000;
   color:var(--white); font-weight:500; font-size:.94rem; border-radius:999px;
-  padding:16px 20px; box-shadow:0 8px 22px rgba(153,0,0,.4);
+  padding:16px 20px; box-shadow:0 8px 22px rgba(0,0,0,.4);
   position:relative; animation:kw-pulse 2.6s ease-in-out infinite;
 }
 @keyframes kw-pulse{ 0%,100%{ transform:scale(1); } 50%{ transform:scale(1.025); } }
@@ -208,15 +208,7 @@ a{ text-decoration:none; color:inherit; }
 .kw-event .kw-eyebrow::before,.kw-event .kw-eyebrow::after{ background:rgba(255,255,255,.25); }
 .kw-event-title{ text-align:center; font-size:1.6rem; font-weight:900; line-height:1.5; margin:0 0 18px; }
 .kw-event-title .kw-num{ color:var(--gold-500); font-size:1.15em; }
-.kw-event-text{ text-align:center; font-size:.88rem; line-height:1.9; color:var(--orange-200); margin:0 0 24px; max-width:440px; margin-left:auto; margin-right:auto; }
-.kw-event-facts{ display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:0 auto 26px; max-width:440px; }
-.kw-event-fact{
-  background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.18); border-radius:10px;
-  padding:12px 10px; text-align:center;
-}
-.kw-event-fact-label{ font-size:.62rem; color:var(--orange-200); font-weight:700; margin-bottom:4px; }
-.kw-event-fact-value{ font-size:.92rem; font-weight:900; color:var(--white); }
-.kw-event-fact.full{ grid-column:1 / -1; }
+.kw-event-text{ text-align:center; font-size:.88rem; line-height:1.9; color:var(--white); margin:0 0 24px; max-width:440px; margin-left:auto; margin-right:auto; }
 
 /* ===================== 白焼き紹介 ===================== */
 .kw-check-list{ display:flex; flex-direction:column; gap:9px; margin:24px 0; }
@@ -265,7 +257,6 @@ a{ text-decoration:none; color:inherit; }
 }
 .kw-sticky-cta .kw-cta-btn{
   margin:0; font-size:.88rem; padding:12px;
-  background:transparent; border:2px solid var(--white); box-shadow:none;
 }
 
 /* ===================== SVGアイコン共通 ===================== */
@@ -315,6 +306,7 @@ a{ text-decoration:none; color:inherit; }
         <p class="kw-countdown-label" id="kwCdLabel">早期予約 受付開始まで</p>
         <div class="kw-countdown-timer" id="kwCdTimer">--<span class="kw-cd-unit">日</span>--<span class="kw-cd-unit">時間</span></div>
       </div>
+      <img src="images/product/photo03.jpg" alt="新子うなぎ 長焼き特大170g 7,890円〜" class="kw-block-photo" style="max-width:420px;margin:0 auto 20px;">
       <a href="#" class="kw-cta-btn kw-cta-btn-lg" data-cta>新仔うなぎを予約する</a>
       <p class="kw-cta-note">今年も予約受付開始。希少な新仔うなぎを、早期予約特典付きでお届けします。</p>
     </div>
@@ -394,18 +386,6 @@ a{ text-decoration:none; color:inherit; }
     </div>
   </section>
 
-  <!-- ============================================================
-       ブロック3：年に一度だけの旬
-       ============================================================ -->
-  <section class="kw-block kw-block-white" id="block-season">
-    <div class="kw-inner">
-      <span class="kw-eyebrow">ONCE A YEAR</span>
-      <h2 class="kw-block-title">年に一度だけの旬</h2>
-      <p class="kw-block-text">新仔うなぎは一年中流通するものではありません。約10か月育てられたこの時期だけ味わえる、秋だけの旬の美味しさ。</p>
-      <p class="kw-block-text"><strong>この季節を逃すと、また来年まで味わうことができない貴重なうなぎです。</strong></p>
-    </div>
-  </section>
-
   <div class="kw-band kw-band-orange">早期予約でさらにお得に</div>
 
   <!-- ============================================================
@@ -416,24 +396,7 @@ a{ text-decoration:none; color:inherit; }
     <h2 class="kw-event-title">早期予約するとさらにお得<br><span class="kw-num">W</span>特典</h2>
     <p class="kw-event-text">8月7日0:00〜8月28日13:59の期間限定。早めのご予約で、ポイント10倍に加えて、先着3,000名様に国産うなぎ白焼きカット(自家製ぽんず付)をプレゼントします。</p>
 
-    <div class="kw-event-facts">
-      <div class="kw-event-fact full">
-        <p class="kw-event-fact-label">早期予約期間</p>
-        <p class="kw-event-fact-value">8月7日 0:00〜8月28日 13:59</p>
-      </div>
-      <div class="kw-event-fact">
-        <p class="kw-event-fact-label">特典①</p>
-        <p class="kw-event-fact-value">ポイント10倍</p>
-      </div>
-      <div class="kw-event-fact">
-        <p class="kw-event-fact-label">特典②</p>
-        <p class="kw-event-fact-value">白焼きカット<br>先着3,000名様</p>
-      </div>
-      <div class="kw-event-fact full">
-        <p class="kw-event-fact-label">商品発送</p>
-        <p class="kw-event-fact-value">9月7日以降 順次発送</p>
-      </div>
-    </div>
+    <img src="images/product/w-tokuten.jpg" alt="早期予約W特典" class="kw-block-photo" style="max-width:440px;margin:0 auto 26px;">
 
     <a href="#" class="kw-cta-btn kw-cta-btn-lg" data-cta>新仔うなぎを予約する</a>
     <p class="kw-cta-note" style="margin-top:10px;">白焼きカットプレゼントは先着3,000名様限定です</p>
@@ -469,11 +432,11 @@ a{ text-decoration:none; color:inherit; }
   <section class="kw-final" id="block-final">
     <div class="kw-inner" style="padding-top:0;padding-bottom:0;">
       <span class="kw-eyebrow">CAMPAIGN SUMMARY</span>
-      <h2 class="kw-block-title">秋だけの贅沢を、<br>今年も食卓へ</h2>
+      <h2 class="kw-block-title">秋だけの贅沢を<br>今年も食卓へ</h2>
       <p class="kw-block-text">年に一度、この季節だけ。<strong>希少な新仔うなぎを、早期予約特典付きでお届けします。</strong></p>
 
       <div class="kw-final-offer">
-        <img src="images/product/item.jpg" alt="新仔うなぎ・白焼きカット(自家製ぽんず付)" class="kw-final-offer-photo">
+        <img src="images/product/photo03.jpg" alt="新子うなぎ 長焼き特大170g" class="kw-final-offer-photo">
         <p class="kw-final-offer-name">新仔うなぎ 早期予約キャンペーン</p>
         <p style="font-size:.78rem;color:var(--orange-200);margin:0 0 4px;">予約期間:8月7日0:00〜8月28日13:59</p>
         <p style="font-size:.78rem;color:var(--orange-200);margin:0;">発送:9月7日以降 順次発送</p>
@@ -519,8 +482,7 @@ a{ text-decoration:none; color:inherit; }
 
 <script>
 /* ===================== 設定値(要編集箇所) ===================== */
-/* TODO: 実際の予約受付ページ(商品ページ)URLに差し替えてください */
-const PRODUCT_URL = "#";
+const PRODUCT_URL = "https://item.rakuten.co.jp/kawasui/10001879/";
 
 /* 早期予約 開始・終了日時 */
 const CAMPAIGN_START = new Date("2026-08-07T00:00:00+09:00");
