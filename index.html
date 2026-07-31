@@ -13,27 +13,27 @@
 
 <style>
 :root{
-  --unagi-900:#3D1A0A;
-  --unagi-800:#4E2410;
-  --unagi-700:#6B3116;
-  --unagi-500:#9C5A2E;
-  --unagi-300:#D9A972;
+  --unagi-900:#990000;
+  --unagi-800:#CC0000;
+  --unagi-700:#CC9966;
+  --unagi-500:#CC9966;
+  --unagi-300:#CC9966;
   --unagi-100:#F6E3C9;
-  --orange-600:#E85D1F;
-  --orange-500:#F2791F;
-  --orange-200:#FFD9AE;
-  --orange-050:#FFF3E6;
-  --gold-600:#C98A0A;
-  --gold-500:#F2B705;
-  --gold-200:#FBE29B;
-  --red-700:#9E1B12;
-  --red-600:#C81E1E;
-  --red-500:#E8382B;
+  --orange-600:#FF9933;
+  --orange-500:#FF9933;
+  --orange-200:#FFCC33;
+  --orange-050:#CC9966;
+  --gold-600:#CC9966;
+  --gold-500:#FFCC33;
+  --gold-200:#FFCC33;
+  --red-700:#990000;
+  --red-600:#CC0000;
+  --red-500:#CC0000;
   --cream-050:#FFFBF3;
   --white:#FFFFFF;
   --line:#EFDFCB;
-  --ink:#2A1608;
-  --ink-soft:#6B4A34;
+  --ink:#000000;
+  --ink-soft:#000000;
 }
 *{ box-sizing:border-box; }
 html{ scroll-behavior:smooth; font-size:130%; }
@@ -76,22 +76,22 @@ a{ text-decoration:none; color:inherit; }
 .kw-eyebrow{
   display:flex; align-items:center; justify-content:center; gap:10px;
   font-family:"Josefin Sans",sans-serif; font-weight:600; font-size:.72rem;
-  letter-spacing:.28em; color:var(--orange-600); margin-bottom:14px;
+  letter-spacing:.28em; color:#000000; margin-bottom:14px;
 }
 .kw-eyebrow::before,.kw-eyebrow::after{ content:''; height:1px; width:22px; background:var(--unagi-500); opacity:.4; }
 .kw-block-title{
   text-align:center; font-size:1.5rem; font-weight:900; line-height:1.55;
-  color:var(--unagi-900); margin:0 0 18px;
+  color:#000000; margin:0 0 18px;
 }
 .kw-block-lead{
-  text-align:center; font-weight:700; font-size:1.02rem; color:var(--orange-600);
+  text-align:center; font-weight:700; font-size:1.02rem; color:#000000;
   margin:0 0 14px;
 }
 .kw-block-text{
   font-size:.92rem; line-height:1.9; color:var(--ink-soft); margin:0 0 14px;
   text-align:center;
 }
-.kw-block-text strong{ color:var(--unagi-800); }
+.kw-block-text strong{ color:#000000; }
 
 /* ===================== ヘッダー ===================== */
 .kw-header{
@@ -104,7 +104,7 @@ a{ text-decoration:none; color:inherit; }
   padding:11px 16px;
 }
 .kw-header-logo-img{ height:22px; width:auto; display:block; }
-.kw-header-tag{ font-size:.68rem; color:var(--orange-600); font-weight:700; letter-spacing:.08em; }
+.kw-header-tag{ font-size:.68rem; color:#000000; font-weight:700; letter-spacing:.08em; }
 .kw-header-spacer{ height:48px; }
 
 /* ===================== 帯 ===================== */
@@ -114,7 +114,7 @@ a{ text-decoration:none; color:inherit; }
   padding:11px 16px; line-height:1.6;
 }
 .kw-band-orange{ background:var(--orange-600); }
-.kw-band-gold{ background:var(--gold-500); color:var(--unagi-900); }
+.kw-band-gold{ background:var(--gold-500); color:#000000; }
 .kw-band-red{ background:linear-gradient(135deg, var(--red-700), var(--red-500)); }
 
 /* ===================== ファーストビュー(画像) ===================== */
@@ -134,15 +134,15 @@ a{ text-decoration:none; color:inherit; }
   background:linear-gradient(135deg, #FFD9AE 0%, #FFC24E 55%, #F2791F 100%);
 }
 .kw-hero-note-wrap .kw-cta-btn{ max-width:420px; margin:0 auto; }
-.kw-hero-note-wrap .kw-cta-note{ color:var(--unagi-900); opacity:.75; margin-top:10px; }
+.kw-hero-note-wrap .kw-cta-note{ color:#000000; opacity:.75; margin-top:10px; }
 
 .kw-countdown{
   background:rgba(255,255,255,.6); border:1px solid rgba(255,255,255,.75); border-radius:12px;
   padding:14px 16px; margin:0 0 20px; backdrop-filter:blur(4px);
 }
-.kw-countdown-label{ font-size:.72rem; font-weight:700; color:var(--unagi-900); margin:0 0 8px; letter-spacing:.04em; }
-.kw-countdown-timer{ font-family:"Josefin Sans",sans-serif; font-weight:700; font-size:1.6rem; letter-spacing:.02em; color:var(--red-700); }
-.kw-countdown-timer .kw-cd-unit{ font-size:.62rem; font-family:"Noto Sans JP",sans-serif; font-weight:700; margin:0 5px 0 2px; color:var(--unagi-900); }
+.kw-countdown-label{ font-size:.72rem; font-weight:700; color:#000000; margin:0 0 8px; letter-spacing:.04em; }
+.kw-countdown-timer{ font-family:"Josefin Sans",sans-serif; font-weight:700; font-size:1.6rem; letter-spacing:.02em; color:#000000; }
+.kw-countdown-timer .kw-cd-unit{ font-size:.62rem; font-family:"Noto Sans JP",sans-serif; font-weight:700; margin:0 5px 0 2px; color:#000000; }
 
 .kw-fv-offer{ margin-bottom:20px; }
 
@@ -150,7 +150,7 @@ a{ text-decoration:none; color:inherit; }
 .kw-cta-btn{
   display:block; text-align:center; background:linear-gradient(135deg, var(--red-700), var(--red-500));
   color:var(--white); font-weight:500; font-size:.94rem; border-radius:999px;
-  padding:16px 20px; box-shadow:0 8px 22px rgba(158,27,18,.4);
+  padding:16px 20px; box-shadow:0 8px 22px rgba(153,0,0,.4);
   position:relative; animation:kw-pulse 2.6s ease-in-out infinite;
 }
 @keyframes kw-pulse{ 0%,100%{ transform:scale(1); } 50%{ transform:scale(1.025); } }
@@ -168,11 +168,10 @@ a{ text-decoration:none; color:inherit; }
 /* ===================== 特徴アイコン列 ===================== */
 .kw-feature-list{ display:flex; flex-direction:column; gap:10px; margin:22px 0; }
 .kw-feature-item{
-  display:flex; align-items:center; gap:12px; background:var(--orange-050);
+  display:flex; align-items:center; gap:12px; background:var(--white);
   border:1px solid var(--line); border-radius:10px; padding:12px 14px;
 }
-.kw-feature-icon{ flex:none; width:30px; height:30px; color:var(--orange-600); }
-.kw-feature-text{ font-size:.82rem; font-weight:700; color:var(--unagi-800); }
+.kw-feature-text{ font-size:.82rem; font-weight:700; color:#000000; }
 
 /* ===================== 新仔うなぎとは 図解 ===================== */
 .kw-timeline{
@@ -184,7 +183,7 @@ a{ text-decoration:none; color:inherit; }
   width:14px; height:14px; border-radius:50%; background:var(--orange-600);
   margin:0 auto 8px;
 }
-.kw-timeline-label{ font-size:.62rem; font-weight:700; color:var(--unagi-800); line-height:1.5; }
+.kw-timeline-label{ font-size:.62rem; font-weight:700; color:#000000; line-height:1.5; }
 .kw-timeline-arrow{ color:var(--unagi-300); font-size:1rem; flex:none; margin-top:-16px; }
 
 .kw-compare{ display:flex; gap:10px; margin:22px 0; }
@@ -194,7 +193,7 @@ a{ text-decoration:none; color:inherit; }
 .kw-compare-card.is-hine{ background:var(--white); }
 .kw-compare-card.is-shinko{ background:linear-gradient(160deg, var(--orange-050), var(--gold-200)); border-color:var(--gold-500); }
 .kw-compare-label{ font-size:.66rem; font-weight:700; color:var(--ink-soft); margin-bottom:4px; }
-.kw-compare-name{ font-size:1rem; font-weight:900; color:var(--unagi-900); margin-bottom:6px; }
+.kw-compare-name{ font-size:1rem; font-weight:900; color:#000000; margin-bottom:6px; }
 .kw-compare-desc{ font-size:.7rem; color:var(--ink-soft); line-height:1.7; }
 
 /* ===================== イベントブロック(早期予約W特典) ===================== */
@@ -224,7 +223,7 @@ a{ text-decoration:none; color:inherit; }
 .kw-check-item{
   display:flex; align-items:flex-start; gap:10px; background:var(--white);
   border:1px solid var(--line); border-radius:10px; padding:12px 14px;
-  font-size:.84rem; font-weight:700; color:var(--unagi-800); line-height:1.6;
+  font-size:.84rem; font-weight:700; color:#000000; line-height:1.6;
 }
 .kw-check-icon{ flex:none; width:20px; height:20px; color:var(--orange-600); margin-top:1px; }
 
@@ -252,7 +251,7 @@ a{ text-decoration:none; color:inherit; }
 
 /* ===================== 注意書き・フッター ===================== */
 .kw-notices{ background:var(--white); padding:34px 22px 100px; }
-.kw-notices-title{ font-size:.76rem; font-weight:900; color:var(--orange-600); margin:0 0 10px; text-align:center; }
+.kw-notices-title{ font-size:.76rem; font-weight:900; color:#000000; margin:0 0 10px; text-align:center; }
 .kw-notices ul{ margin:0; padding:0 0 0 1.1em; }
 .kw-notices li{ font-size:.68rem; color:var(--ink-soft); line-height:1.9; }
 .kw-footer-note{ background:var(--unagi-900); color:var(--orange-200); text-align:center; padding:26px 20px 100px; font-size:.72rem; line-height:1.9; }
@@ -316,7 +315,7 @@ a{ text-decoration:none; color:inherit; }
         <p class="kw-countdown-label" id="kwCdLabel">早期予約 受付開始まで</p>
         <div class="kw-countdown-timer" id="kwCdTimer">--<span class="kw-cd-unit">日</span>--<span class="kw-cd-unit">時間</span></div>
       </div>
-      <a href="#" class="kw-cta-btn kw-cta-btn-lg" data-cta>今年も新仔うなぎを予約する</a>
+      <a href="#" class="kw-cta-btn kw-cta-btn-lg" data-cta>新仔うなぎを予約する</a>
       <p class="kw-cta-note">今年も予約受付開始。希少な新仔うなぎを、早期予約特典付きでお届けします。</p>
     </div>
   </section>
@@ -376,19 +375,15 @@ a{ text-decoration:none; color:inherit; }
 
       <div class="kw-feature-list">
         <div class="kw-feature-item">
-          <span class="kw-feature-icon"><svg class="kw-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14c2-6 6-9 10-9 3 0 6 2 6 5 0 5-6 10-12 10-2 0-4-2-4-4 0-1 .5-1.5 0-2Z"/></svg></span>
           <span class="kw-feature-text">身も皮も驚くほど柔らかい</span>
         </div>
         <div class="kw-feature-item">
-          <span class="kw-feature-icon"><svg class="kw-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11Z"/></svg></span>
           <span class="kw-feature-text">脂のりが上品でしつこくない</span>
         </div>
         <div class="kw-feature-item">
-          <span class="kw-feature-icon"><svg class="kw-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg></span>
           <span class="kw-feature-text">小骨が少なく食べやすい</span>
         </div>
         <div class="kw-feature-item">
-          <span class="kw-feature-icon"><svg class="kw-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></span>
           <span class="kw-feature-text">臭みが少なく、うなぎ本来の旨みを楽しめる</span>
         </div>
       </div>
@@ -440,7 +435,7 @@ a{ text-decoration:none; color:inherit; }
       </div>
     </div>
 
-    <a href="#" class="kw-cta-btn kw-cta-btn-lg" data-cta>早期予約する</a>
+    <a href="#" class="kw-cta-btn kw-cta-btn-lg" data-cta>新仔うなぎを予約する</a>
     <p class="kw-cta-note" style="margin-top:10px;">白焼きカットプレゼントは先着3,000名様限定です</p>
   </section>
 
@@ -450,7 +445,7 @@ a{ text-decoration:none; color:inherit; }
   <section class="kw-block kw-block-white" id="block-shirayaki">
     <div class="kw-inner">
       <span class="kw-eyebrow">SHIRAYAKI</span>
-      <h2 class="kw-block-title">白焼きとは?</h2>
+      <h2 class="kw-block-title">特典の白焼きとは?</h2>
       <img src="images/product/shirayaki.jpg" alt="国産うなぎ 白焼きカット 自家製ぽんず付" class="kw-block-photo">
       <p class="kw-block-text">通常の蒲焼とは違い、タレを付けずに香ばしく焼き上げたのが「白焼き」。余計な味付けをしていないため、うなぎ本来の香り、旨み、上質な脂の甘みを、そのまま味わえます。</p>
       <p class="kw-block-text">付属の自家製ぽんずでさっぱりと食べるのはもちろん、わさびや塩を添えていただくのもおすすめです。</p>
@@ -488,7 +483,7 @@ a{ text-decoration:none; color:inherit; }
         </div>
       </div>
 
-      <a href="#" class="kw-cta-btn kw-cta-btn-lg" data-cta>早期予約する</a>
+      <a href="#" class="kw-cta-btn kw-cta-btn-lg" data-cta>新仔うなぎを予約する</a>
       <a href="#" class="kw-btn-secondary" data-cta>商品ページで詳しく見る</a>
     </div>
   </section>
@@ -517,7 +512,7 @@ a{ text-decoration:none; color:inherit; }
 
   <!-- 追従CTA(スマホ) -->
   <div class="kw-sticky-cta">
-    <a href="#" class="kw-cta-btn" data-cta>8/28 13:59まで｜早期予約W特典</a>
+    <a href="#" class="kw-cta-btn" data-cta>新仔うなぎを予約する</a>
   </div>
 
 </div>
